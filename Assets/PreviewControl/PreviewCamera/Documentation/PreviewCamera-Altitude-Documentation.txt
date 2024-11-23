@@ -141,8 +141,35 @@ Height: 50
 Text:
 -----
 
-Altitude: 0 ft
+Altitude: 5 ft
 
+
+
+Since the Preview Camera was set at "1.6" previously in the instructions, we
+set the text above at example:
+
+Altitude: 5 ft
+
+Now say just for example sake lets say we had set our camera initially at 2
+instead, we can then opt set the text above at example:
+
+Altitude: 7 ft
+
+Again just note this is simple an example an a base for not in play mode as
+such text gets overwritten on Play - > Start / Update. Hopefully that makes
+sense.
+
+Also note: if selecting meters then such would be slightly different numbers
+as the measurement unit type is different and say just for example note that
+when feet is selected we are simply converting from meters via script
+
+ie:
+
+0.3048 is the constant to convert from m to ft ie: 0.3048 m = 1 ft thus
+altitude in m divided by 0.3048 gets feet
+
+
+Again hopefully that all makes sense ;)
 
 
 Alignment: Center & Middle
