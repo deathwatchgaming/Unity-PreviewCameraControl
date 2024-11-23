@@ -24,8 +24,8 @@ demo content in asset or what not, thus upon considering such it was decided
 to add this repository for such...
 
 
-Previe Camera Controls: 
------------------------
+Preview Camera Controls: 
+------------------------
 
 
   Note: The following found below are related to the provided scripts.
@@ -79,6 +79,6 @@ Manual Setup Instruction:
 Simply follow the documentation instruction linkages for manual setups found below.
 
 
-* Preview Camera Setup Documentation: (Coming Soon...)
+* Preview Camera Setup Documentation: https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt
 
 * Preview Camera Altitude Setup Documentation: (Coming Soon...)

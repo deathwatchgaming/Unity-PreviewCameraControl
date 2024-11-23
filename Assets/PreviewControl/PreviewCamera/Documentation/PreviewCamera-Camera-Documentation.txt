@@ -1,1 +1,228 @@
-The Writing Of This Documentation Is In Progress...
+Preview Camera Setup
+-----------------------------------------------------------------------------------
+
+
+Description:
+------------
+
+
+Create a basic ("Preview Camera" / "Fly Cam")  by example for your unity
+asset / project
+
+
+
+Preview Camera Controls: 
+------------------------
+
+
+  Note: The following found below are related to the provided scripts.
+
+
+Basic:
+
+* Forward:   W
+* Reverse:   S
+* Left:      A
+* Right:     D
+* Up:        Q
+* Down:      E
+* Minus FOV: Z or Mouse Scroll Wheel
+* Plus FOV:  X or Mouse Scroll Wheel
+
+
+
+Further:
+
+* Vertical Move Input:               Vertical
+* Horizontal Move Input:             Horizontal
+* Mouse Scroll Wheel Input:          Mouse ScrollWheel
+* Mouse Y Input:                     Mouse Y
+* Mouse X Input:                     Mouse X
+* Plus Speed Left Key:               Left Shift
+* Plus Speed Right Key:              Right Shift
+* Minus Speed Left Key:              Left Control
+* Minus Speed Right Key:             Right Control
+* Plus Lift Key:                     Q
+* Minus Lift Key:                    E
+* Cursor Lock Key:                   End
+* Minus Field Of View Key:           Z
+* Plus Field Of View Key:            X
+
+
+NOTE: This can be used simply as preview cam script only or also provides the
+option to then opt to also add the preview cam altitude script as well.
+
+
+Dependencies:
+
+The Preview Camera Altitude Script uses Text Mesh Pro 
+
+
+
+Manual Setup Instruction:
+-------------------------
+
+
+* Simply follow the instruction for manual setup found below.
+
+Note: if you already have some sort of a test terrain in place, well then, you
+can simple skip the steps: #1, 2 & 3 and go directly to #4.
+
+
+-----------------------------------------------------------------------------------
+
+Step 1: Create: "Environment" * (for Nicer Organization)
+
+-----------------------------------------------------------------------------------
+
+
+Create Empty: "Environment"
+
+Position: X: 0 Y: 0 Z: 0 
+Rotation: X: 0 Y: 0 Z: 0 
+Scale:    X: 1 Y: 1 Z: 1
+
+
+As a child of: "Environment" create an empty called: "Lights"
+
+Position: X: 0 Y: 0 Z: 0 
+Rotation: X: 0 Y: 0 Z: 0 
+Scale:    X: 1 Y: 1 Z: 1
+
+First since this is just a "holder" added for better organization, let us go
+ahead & drag the "Directional Light" into "Environment > "Lights".
+
+* also if you wanted you could add a "dir" called Environment and opt to place
+  your TerrainData inside that in its own Directory
+  ie: "Environment" > "Ground" > "TerrainData" and as such any other
+  Environment stuff respectively in as desired the "Environment" dir. Just a
+  suggestion.
+
+Also: We will need the "Main Camera" in Sample Scene, so..., we can go ahead
+and keep it.
+
+
+Next...,
+
+As a child of: "Environment" create an empty called: "Ground"
+
+Position: X: 0 Y: 0 Z: 0 
+Rotation: X: 0 Y: 0 Z: 0 
+Scale:    X: 1 Y: 1 Z: 1
+
+
+Next...,
+
+As a child of: "Environment" create an empty called: "Lights"
+
+Position: X: 0 Y: 0 Z: 0 
+Rotation: X: 0 Y: 0 Z: 0 
+Scale:    X: 1 Y: 1 Z: 1
+
+
+-----------------------------------------------------------------------------------
+
+Step 2: Create: "Terrain Plane"
+
+-----------------------------------------------------------------------------------
+
+
+Create New 3D Object: "Plane"
+
+Position: X: 0   Y: -0.03 Z: 0 
+Rotation: X: 0   Y: 0     Z: 0 
+Scale:    X: 100 Y: 1     Z: 100
+
+Rename to: "Terrain Plane"
+
+We can now opt to clean up for better organization, simply drag the:
+"Terrain Plane" into the holder "Environment" > "Ground" we added for just
+ this exact purpose!
+
+
+-----------------------------------------------------------------------------------
+
+Step 3: Create: "Terrain"
+
+-----------------------------------------------------------------------------------
+
+
+Create New 3D Object: "Terrain"
+
+Modify via:
+
+"Terrain" Inspector: Terrain Settings
+
+Position: X: -1250 Y: 0 Z: -1250 
+Rotation: X: 0     Y: 0 Z: 0 
+Scale:    X: 1     Y: 1 Z: 1
+
+
+In Terrain Settings:
+--------------------
+
+Set:
+
+Terrain Width: 2500
+Terrain Length: 2500
+
+
+We can now opt to clean up for better organization, simply drag the:
+"Terrain" into the holder "Environment" > "Ground" we added for just this
+ exact purpose!
+
+
+-----------------------------------------------------------------------------------
+
+Step 4: Prep: "Main Camera"
+
+-----------------------------------------------------------------------------------
+
+
+Now, we could set the Main Camera transform various ways but for this
+particular example since we just want to use it as a Preview camera we will
+simply set it a little bit above the ground for example: 1.6 and then set
+back a little bit say for example -10
+
+Modify:
+
+Position: X: 0  Y: 1.6 Z: -10 
+Rotation: X: 0  Y: 0 Z: 0 
+Scale:    X: 1  Y: 1 Z: 1
+
+
+-----------------------------------------------------------------------------------
+
+Step 5: Add script: "PreviewCamera.cs" Attach it to the: "Main Camera"
+
+-----------------------------------------------------------------------------------
+
+
+Add script: "PreviewCamera.cs" 
+
+
+Attach the script to: "Main Camera"
+
+
+You can then modify any settings yopu might desire to modify, but, alas as is
+simply adding the script so set the base and allow you to now start using
+your "preview camera".
+
+
+-----------------------------------------------------------------------------------
+
+Step 6: (Optional) Notes on adding Preview Camera Altitude Script 
+
+-----------------------------------------------------------------------------------
+
+
+Now, if you would like to also add the "Preview Camera Altitude" script then
+you would need to next follow that related setup steps documentation....
+
+
+ie: PreviewCamera-Altitude-Documentation.txt
+
+
+-----------------------------------------------------------------------------------
+
+That is it! Simple enough, right?! Best of Luck!
