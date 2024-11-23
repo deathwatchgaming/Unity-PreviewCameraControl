@@ -138,6 +138,19 @@ Width: 300
 Height: 50
 
 
+Note: currently, the script has the options below hardcoded just in case you
+forget the following, though that part could be commented out in the code in
+the "Start Method" if not desired else keep as is and simple for visual
+benefit let us set them in the editor regardless.
+
+
+Font Style: Small Caps
+
+Font Size: 26
+
+Auto Size: Checked
+
+
 -----------------------------------------------------------------------------------
 
 Step 6:  In: "PreviewCameraAltitude" as child of add: UI - "Raw Image"
