@@ -142,11 +142,19 @@ namespace PreviewControl
 		// float mouseScroll is 0
 		private float mouseScroll = 0f;
 
+		// Static
+
+		// static PreviewCamera _previewCamera;
+		public static PreviewCamera _previewCamera;
+
 		// Start is called before the first frame update
 
 		// private void Start
 		private void Start()
 		{
+			// _previewCamera is this
+			_previewCamera = this;
+
 			// Cursor lockState is CursorLockMode Locked
 			Cursor.lockState = CursorLockMode.Locked;
 
