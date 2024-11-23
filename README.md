@@ -39,7 +39,7 @@ Basic:
 * Right:     D
 * Up:        Q
 * Down:      E
-* Minus FOV: Z or Mose Scroll Wheel
+* Minus FOV: Z or Mouse Scroll Wheel
 * Plus FOV:  X or Mouse Scroll Wheel
 
 
