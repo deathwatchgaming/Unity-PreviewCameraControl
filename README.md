@@ -23,6 +23,8 @@ would not need one but would need some type of preview camera to view the
 demo content in asset or what not, thus upon considering such it was decided
 to add this repository for such...
 
+NOTE: This project was developed while / for using Unity 2021+ & 2022+ & Unity 6
+
 
 Preview Camera Controls: 
 ------------------------
