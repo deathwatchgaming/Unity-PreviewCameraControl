@@ -14,13 +14,13 @@ using UnityEngine.UI;
 // namespace PreviewControl
 namespace PreviewControl
 {
-    // public enum AltitudeType
+    // public enum CameraAltitudeType
     public enum CameraAltitudeType
     {
         ft,
         m 
 
-    } // close public enum AltitudeType
+    } // close public enum CameraAltitudeType
 
     // public class PreviewCameraAltitude
     public class PreviewCameraAltitude : MonoBehaviour
@@ -136,13 +136,13 @@ namespace PreviewControl
         // UpdateHUD
         private void UpdateHUD()
         {
-            // if _cameraaltitudeType is  CameraAltitudeType ft
+            // if _cameraAltitudeType is CameraAltitudeType ft
             if (_cameraAltitudeType == CameraAltitudeType.ft)
             {
                 // _cameraAltitude text Altitude: ft
                 _cameraAltitude.text = "Altitude: " + (transform.position.y / 0.3048f).ToString("F0") + " ft";
 
-            } // close if _cameraaltitudeType is  CameraAltitudeType ft
+            } // close if _cameraAltitudeType is CameraAltitudeType ft
 
             // else if _cameraAltitudeType is  CameraAltitudeType m
             else if (_cameraAltitudeType == CameraAltitudeType.m)
