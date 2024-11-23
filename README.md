@@ -81,4 +81,4 @@ Simply follow the documentation instruction linkages for manual setups found bel
 
 * Preview Camera Setup Documentation: https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt
 
-* Preview Camera Altitude Setup Documentation: (Coming Soon...)
+* Preview Camera Altitude Setup Documentation: https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Altitude-Documentation.txt

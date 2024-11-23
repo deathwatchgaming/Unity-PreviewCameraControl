@@ -203,10 +203,17 @@ Add script: "PreviewCamera.cs"
 
 Attach the script to: "Main Camera"
 
+make sure that...
 
-You can then modify any settings yopu might desire to modify, but, alas as is
-simply adding the script so set the base and allow you to now start using
-your "preview camera".
+Enabled State:
+--------------
+
+Preview Camera Enabled: "Checked" * This should already be defined by default
+
+Also note: The script already has all the base settings set so as to make
+setup very easy and as such after adding the script you can then modify any
+settings you might desire to modify, but, alas as is, simply adding the script
+sets the base and allows you to now start using your "preview camera".
 
 
 -----------------------------------------------------------------------------------

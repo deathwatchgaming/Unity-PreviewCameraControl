@@ -1,1 +1,243 @@
-The Writing Of This Documentation Is In Progress...
+Preview Camera Altitude Setup
+-----------------------------------------------------------------------------------
+
+
+Description:
+------------
+
+
+Add an optional UI Interface "Altitude" Reading to your Preview Camera... 
+
+
+
+Dependencies:
+
+The Preview Camera Altitude Script uses "Text Mesh Pro" 
+
+
+
+Manual Setup Instruction:
+-------------------------
+
+
+* Simply follow the instruction for manual setup found below.
+
+
+-----------------------------------------------------------------------------------
+
+Step 1: Prep: Import "Texture": "AltitudeBackground.png" and setup "Image Format"
+
+-----------------------------------------------------------------------------------
+
+In "Textures" Directory:
+
+Find: "AltitudeBackground.png"
+
+
+Altitude Background Import Settings:
+------------------------------------
+
+Set:
+----
+
+Texture Type: Sprite (2D and UI)
+
+Sprite Mode: Single
+
+Compression: None
+
+Select: "Apply"
+
+
+-----------------------------------------------------------------------------------
+
+Step 2: Create / add: an empty called: "Interface"
+
+-----------------------------------------------------------------------------------
+
+
+Create / add: an empty called: "Interface"
+
+Layer: UI
+
+Position:  X: 0  Y: 0  Z:0
+Rotation:  X: 0  Y: 0  Z:0
+Scale:     X: 1  Y: 1  Z:1
+
+
+-----------------------------------------------------------------------------------
+
+Step 3: In: "Interface" add as child UI -> "Canvas"
+
+-----------------------------------------------------------------------------------
+
+
+In "Interface", add as a child a UI -> "Canvas"
+
+Layer: UI
+
+Modify:
+
+Pixel Perfect: Checked
+UI Scale Mode: Scale With Screen Size
+Reference Resolution: X: 1920 Y: 1080
+Screen Match Mode: Width Or Height
+Match: 0
+Reference Pixels Per Unit: 1920
+
+
+-----------------------------------------------------------------------------------
+
+Step 4: In: "Canvas" create an "empty" as child called: "PreviewCameraAltitude"
+
+-----------------------------------------------------------------------------------
+
+In: "PreviewCameraAltitude"
+
+Modify:
+
+Layer: UI
+
+Rect Transform:
+---------------
+
+Top & Center
+
+
+Pos X: 357 
+Pos Y: -516 
+Pos Z: 0
+
+
+-----------------------------------------------------------------------------------
+
+Step 5: In: "PreviewCameraAltitude" as child of add: UI - Text - TextMeshPro
+
+-----------------------------------------------------------------------------------
+
+
+Rename to: "Camera_AltitudeText"
+
+In: "Camera_AltitudeText"
+
+Modify:
+
+Layer: UI
+
+Rect Transform:
+---------------
+
+Middle & Center
+
+
+Pos X: -357 
+Pos Y: 489 
+Pos Z: 0
+
+Width: 300
+Height: 50
+
+
+-----------------------------------------------------------------------------------
+
+Step 6:  In: "PreviewCameraAltitude" as child of add: UI - "Raw Image"
+
+-----------------------------------------------------------------------------------
+
+
+Rename to: "Camera_AltitudeBackground"
+
+In: "Camera_AltitudeBackground"
+
+Modify:
+
+Layer: UI
+
+Rect Transform:
+---------------
+
+Top & Center
+
+
+Pos X: -357 
+Pos Y: 489 
+Pos Z: 0
+
+Width: 330
+Height: 50
+
+Scale: X: 0.875  Y: 1 Z: 1
+
+
+Raw Image:
+----------
+
+Texture: "AltitudeBackground"
+
+
+Color: 
+------
+
+R: 127
+G: 127
+B: 127
+A: 25
+
+Hex: 7F7F7F
+
+
+-----------------------------------------------------------------------------------
+
+Step 7: In "Main Camera" add script: "PreviewCameraAltitude.cs"
+
+-----------------------------------------------------------------------------------
+
+
+On / In: "Main Camera" add script: "PreviewCameraAltitude.cs"
+
+
+Modify the following:
+
+
+Game Object:
+------------
+
+Camera Altitude Parent: "PreviewCameraAltitude"
+
+
+Raw Image:
+----------
+
+Altitude Background: Camera_altitudeBackground (Raw Image)
+
+
+Text:
+-----
+
+Camera Altitude: Camera_altitudeText (Text Mesh Pro)
+
+
+Type:
+-----
+
+Camera Altitude Type: "Ft" or "M" * depending on if you want feet or metres
+
+
+Enabled State:
+--------------
+
+Camera Altitude Enabled: "Checked"
+
+
+-----------------------------------------------------------------------------------
+
+Note: While the mentioned placements and other such details are simply
+provided as an example, this does not restrict such to that and you can
+tinker and tweak such further to your desires. Also note that both provided
+scripts are provided "as is" simply as an example / base starting points in
+the hopes that the end user will begin with, use such and then expand and
+improve upon such scripts further.
+
+-----------------------------------------------------------------------------------
+
+That is it! Simple enough, right?! Best of Luck!
