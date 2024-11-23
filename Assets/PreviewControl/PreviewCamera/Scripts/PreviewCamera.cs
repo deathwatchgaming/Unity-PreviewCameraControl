@@ -115,6 +115,13 @@ namespace PreviewControl
 			// float _maximumFOV is 118	
 			[SerializeField,Range(float.Epsilon, 179f)] private float _maximumFOV = 118f;
 
+		// Enabled State
+		[Header("Enabled State")]
+
+			[Tooltip("The Preview Camera enabled state")]
+			// bool PreviewCameraEnabled is true
+			public bool PreviewCameraEnabled = true;
+
 		// Private
 
 		// float _horizontalRotation is 0.0
@@ -152,6 +159,36 @@ namespace PreviewControl
 
 		// private void Update
 		private void Update()
+		{
+			// if PreviewCameraEnabled equals true
+			if (PreviewCameraEnabled == true)
+			{
+				// GetComponent PreviewCamera is enabled
+				GetComponent<PreviewCamera>().enabled = true;
+
+				//Debug.Log("The Preview Camera is enabled");
+
+				// Update Preview Camera
+				UpdatePreviewCamera();
+
+			} // close if PreviewCameraEnabled equals true
+
+			// else if PreviewCameraEnabled equals false
+			else if (PreviewCameraEnabled == false)
+			{
+				//Debug.Log("The Preview Camera is disabled");
+
+				// GetComponent PreviewCamera is not enabled
+				GetComponent<PreviewCamera>().enabled = false;
+
+			} // close else if PreviewCameraEnabled equals false
+
+		}  // close private void Update
+
+		// UpdatePreviewCamera is called in Update
+
+		// private void UpdatePreviewCamera
+		private void UpdatePreviewCamera()
 		{
 			// _horizontalRotation
 			_horizontalRotation += Input.GetAxis(_mouseXInput) * _mouseSensitivity * Time.deltaTime;
@@ -294,8 +331,8 @@ namespace PreviewControl
 
 			// GetComponent Camera fieldOfView is _cameraFOV plus _zoomRatio times Time deltaTime
 			GetComponent<Camera>().fieldOfView = _cameraFOV + _zoomRatio * Time.deltaTime;
-
-		}  // close private void Update
+			
+		} // close private void UpdatePreviewCamera
 
 	} // close public class PreviewCamera
 
