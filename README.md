@@ -79,6 +79,6 @@ Manual Setup Instruction:
 Simply follow the documentation instruction linkages for manual setups found below.
 
 
-* Preview Camaera Setup Documentation: (Coming Soon...)
+* Preview Camera Setup Documentation: (Coming Soon...)
 
-* Preview Camaera Altitude Setup Documentation: (Coming Soon...)
+* Preview Camera Altitude Setup Documentation: (Coming Soon...)
