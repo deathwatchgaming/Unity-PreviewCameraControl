@@ -150,18 +150,19 @@ set the text above at example:
 
 Altitude: 5 ft
 
-Now say just for example sake lets say we had set our camera initially at 2
-instead, we can then opt set the text above at example:
+Now, say just for examples sake, let us say we had set our camera initially at
+2 instead, we can then opt set the text above at example:
 
 Altitude: 7 ft
 
-Again just note this is simple an example an a base for not in play mode as
-such text gets overwritten on Play - > Start / Update. Hopefully that makes
-sense.
+Again, just note that this is simply an example and a base text for not in
+play mode as such text gets overwritten on Play - > Start / Update. Hopefully
+that makes sense.
 
-Also note: if selecting meters then such would be slightly different numbers
-as the measurement unit type is different and say just for example note that
-when feet is selected we are simply converting from meters via script
+Also note: If selecting meters as Type instead then such would be slightly
+different numbers as the measurement unit type is different and say just for
+example note that when feet is selected we are simply converting from meters
+via script.
 
 ie:
 
