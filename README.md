@@ -25,6 +25,10 @@ to add this repository for such...
 
 NOTE: This project was developed while / for using Unity 2021+ & 2022+ & Unity 6
 
+NOTE: This currently still uses the Old Input System, so as such depending on
+what version of Unity you may be using it may be necessary to make sure such
+or both is enabled in project settings.
+
 
 Preview Camera Controls: 
 ------------------------
