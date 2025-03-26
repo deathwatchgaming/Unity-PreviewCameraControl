@@ -49,7 +49,6 @@ Basic:
 * Plus FOV:  X or Mouse Scroll Wheel
 
 
-
 Further:
 
 * Vertical Move Input:               Vertical
