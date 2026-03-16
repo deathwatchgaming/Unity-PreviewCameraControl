@@ -23,11 +23,7 @@ namespace PreviewControl
 
 	        [Tooltip("The input action asset.")]
 	        // InputActionAsset _previewCameraControls
-	        [SerializeField] private InputActionAsset _previewCameraControls;
-
-			//[Tooltip("The mouse scrollwheel input string")]
-			// string _mouseScrollWheelInput is Mouse ScrollWheel
-			//[SerializeField] private string _mouseScrollWheelInput = "Mouse ScrollWheel";			
+	        [SerializeField] private InputActionAsset _previewCameraControls;			
 	        
 		// Amounts
 		[Header("Amounts")]
