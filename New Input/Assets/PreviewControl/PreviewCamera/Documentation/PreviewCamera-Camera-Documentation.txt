@@ -18,35 +18,41 @@ Preview Camera Controls:
   Note: The following found below are related to the provided scripts.
 
 
+NEW INPUT SYSTEM VARIANT:
+
+NOTE: This currently uses the New Input System, so as such depending on
+what version of Unity you may be using it may be necessary to make sure such
+or both is enabled in project settings.
+
+
 Basic:
 
-* Forward:   W
-* Reverse:   S
-* Left:      A
-* Right:     D
-* Up:        Q
-* Down:      E
-* Minus FOV: Z or Mouse Scroll Wheel
-* Plus FOV:  X or Mouse Scroll Wheel
-
+* Forward:   W [Keyboard] / Left Stick [Gamepad]
+* Reverse:   S [Keyboard] / Left Stick [Gamepad]
+* Left:      A [Keyboard] / Left Stick [Gamepad]
+* Right:     D [Keyboard] / Left Stick [Gamepad]
+* Up:        Q [Keyboard] / D-Pad UP [Gamepad]
+* Down:      E [Keyboard] / D-Pad Down [Gamepad]
+* Minus FOV: Z [Keyboard] or Mouse Scroll Wheel / Button North [Gamepad]
+* Plus FOV:  X [Keyboard] or Mouse Scroll Wheel / Button West [Gamepad]
 
 
 Further:
 
-* Vertical Move Input:               Vertical
-* Horizontal Move Input:             Horizontal
-* Mouse Scroll Wheel Input:          Mouse ScrollWheel
-* Mouse Y Input:                     Mouse Y
-* Mouse X Input:                     Mouse X
-* Plus Speed Left Key:               Left Shift
-* Plus Speed Right Key:              Right Shift
-* Minus Speed Left Key:              Left Control
-* Minus Speed Right Key:             Right Control
-* Plus Lift Key:                     Q
-* Minus Lift Key:                    E
-* Cursor Lock Key:                   End
-* Minus Field Of View Key:           Z
-* Plus Field Of View Key:            X
+* Vertical Move Input:               Vertical [Keyboard] / Left Stick [Gamepad]
+* Horizontal Move Input:             Horizontal [Keyboard] / Left Stick [Gamepad]
+* Mouse Scroll Wheel Input:          Mouse ScrollWheel [Mouse]
+* Mouse Y Input:                     Mouse Y [Mouse] / Right Stick [Gamepad]
+* Mouse X Input:                     Mouse X [Mouse] / Right Stick [Gamepad]
+* Plus Speed Left Key:               Left Shift [Keyboard] / Left Trigger [Gamepad]
+* Plus Speed Right Key:              Right Shift [Keyboard] / Right Trigger [Gamepad]
+* Minus Speed Left Key:              Left Control [Keyboard] / Left Shoulder [Gamepad]
+* Minus Speed Right Key:             Right Control [Keyboard] / Right Shoulder [Gamepad]
+* Plus Lift Key:                     Q [Keyboard] / D-Pad UP [Gamepad]
+* Minus Lift Key:                    E [Keyboard] / D-Pad Down [Gamepad]
+* Cursor Lock Key:                   End [Keyboard] / Select [Gamepad]
+* Minus Field Of View Key:           Z [Keyboard] or Mouse Scroll Wheel / Button North [Gamepad]
+* Plus Field Of View Key:            X [Keyboard] or Mouse Scroll Wheel / Button West [Gamepad]
 
 
 NOTE: This can be used simply as preview cam script only or also provides the
@@ -202,6 +208,13 @@ Add script: "PreviewCamera.cs"
 
 
 Attach the script to: "Main Camera"
+
+Assign the...
+
+Input Actions
+--------------
+
+Preview Camera controls: PreviewCameraControls (Input Action Asset)
 
 make sure that...
 
