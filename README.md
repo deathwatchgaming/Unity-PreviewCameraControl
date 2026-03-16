@@ -134,3 +134,10 @@ Old Input Variant:
 * Preview Camera Setup Documentation: [https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Old Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Old%20Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt)
 
 * Preview Camera Altitude Setup Documentation: [https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Old Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Altitude-Documentation.txt](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Old%20Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Altitude-Documentation.txt)
+
+
+New Input Variant:
+
+* Preview Camera Setup Documentation: [https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/New Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/New%20Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Camera-Documentation.txt)
+
+* Preview Camera Altitude Setup Documentation: [https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/New Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Altitude-Documentation.txt](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/New%20Input/Assets/PreviewControl/PreviewCamera/Documentation/PreviewCamera-Altitude-Documentation.txt)
