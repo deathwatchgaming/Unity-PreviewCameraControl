@@ -20,6 +20,7 @@ New Input Variant Preview:
 
  ![Preview](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Previews/PreviewCamera-3.png)
 
+ ![Preview](https://github.com/deathwatchgaming/Unity-PreviewCameraControl/blob/main/Previews/PreviewCamera-4.png)
 
 
 REPO NOTE: The purpose of this repository / project was decided upon recently
